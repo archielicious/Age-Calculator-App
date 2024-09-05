@@ -403,6 +403,11 @@
         document.getElementById("calculated-months").textContent = ageMonths;
         document.getElementById("calculated-days").textContent = ageDays;
       }
+      else {
+        document.getElementById("calculated-years").textContent = '--';
+        document.getElementById("calculated-months").textContent = '--';
+        document.getElementById("calculated-days").textContent = '--';
+      }
     }
     document.getElementById("day").addEventListener("input", validateDay);
     document.getElementById("month").addEventListener("input", validateMonth);
